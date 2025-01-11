@@ -1,0 +1,125 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Nerko One";
+    font-weight: 200;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    background-image: url("..//preq/main_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: optimizeQuality;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    padding: 2%;
+}
+
+@media (max-width : 1200px) {
+    body {
+        background-image: none;
+        background-color: black;
+
+        .loginbox{
+            background-color: grey;
+        }
+
+        .name >input{
+            border-color: black;
+            color: black;
+        }
+    }
+}
+
+.loginbox{
+    height: auto;
+    width: 420px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: rgba(150, 50, 30, 0.25);
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+
+.name{
+    font-size: 30px;
+    width: inherit;
+}
+
+.name > input {
+    color: black;
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    margin: 10px 0;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.name >input::placeholder{
+    color: black;
+    font-size: 16px;
+}
+
+.options > div{
+    padding-top: 10px;
+}
+
+.robot{
+    padding-top: 10px;
+    line-height: 60px;
+    font-size: 26px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+}
+
+.robot h9{
+    font-size: 12px;
+}
+
+.signin{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.signin > button{
+    border-radius: 10px;
+    background-color: rgb(241, 241, 245);
+    font-size: 20px;
+    height: 45px;
+    width: 150px;
+}
+
+.signin > button:hover{
+    background-color: rgb(140, 140, 229);
+}

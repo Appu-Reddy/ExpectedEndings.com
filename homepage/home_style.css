@@ -1,0 +1,331 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Nerko One";
+}
+
+header{
+    height: 100px;
+    background-color: rgb(153,163,154);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    flex-wrap: warp;
+}
+
+/*left section*/
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 40px;
+    padding-top: 8px;
+}
+
+.navbar > .left-section img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+/*right section*/
+
+.right-section {
+    font-size: 21px;
+}
+
+.right-section .extra-opt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.right-section .extra-opt a {
+    color: black;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.right-section .extra-opt a:hover {
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.contact-drop{
+    display: none;
+    list-style: none;
+}
+
+.contact-drop.drop-active{
+    position: absolute;
+    padding: 1%;
+    top: 60px;
+    right: 6%;
+    width: 130px;
+    display: block;
+    background-color: wheat;
+    border-radius: 6px;
+}
+
+/*login button*/
+
+.login{
+    margin-left: 30px;
+}
+
+.login > a > i{
+    background-color: rgb(153,163,154);
+    padding-left: 35px;
+    border: none;
+    font-size: larger;
+}
+
+.login > a:hover {
+    color: blue;
+}
+
+/*Header section completed*/
+
+body{
+    height:fit-content;
+    background-image: url("..//preq/body_bgm.avif");
+    background-size: cover;
+    display: block;
+}
+
+.body-title{
+    padding-top: 60px;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 100px;
+    color: white;
+}
+
+.body-title > b{
+    color: red;
+    font-weight: 200px;
+}
+
+.searchbar >input{
+    height: 20px;
+    width: 70%;
+    padding: 2%;
+    padding-right: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.searchbar-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.search_logo i{
+    font-size: 27px;
+    color: red;
+    cursor: pointer;
+}
+
+.search_logo{
+    position: relative;
+    background: none;
+    border: none;
+    right: 4%;
+}
+
+.searchbar{
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.lang{
+    padding-top: 20px;
+    display: flex;
+    font-size: 21px;
+    justify-content: space-evenly;
+}
+
+.lang a:hover{
+    font-size: 24px;
+}
+
+.box-cont{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 20px 20px 30px;
+}
+
+.box-cont > div{
+    padding: 30px 20px 20px 30px;
+    height: 300px;
+    width: 600px;
+    color: wheat;
+}
+
+.content{
+    text-align: left;
+    font-size: 22px
+}
+
+.content > h1{
+    color: rgb(164, 164, 14);
+    font-size: 38px;
+}
+
+.wrting_bar{
+    padding-top: 50px;
+    font-size: 16px;
+    height: auto;
+    width: fit-content;
+}
+
+.wrting_bar button{
+    font-size: 16px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.wrting_bar button:hover{
+    cursor: pointer;
+    transition-delay: 10ms;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.Box-A:hover{
+    background-color: rgb(30, 27, 27);
+    border-radius: 7px;
+    transition-duration: 5ms;
+}
+
+.Box-B:hover{
+    background-color: rgb(30, 27, 27);
+    border-radius: 7px;
+    transition-duration: 5ms;
+}
+
+.contri{
+    padding: 30px 20px 20px 20px;
+    text-align:center;
+}
+
+.contri > h3{
+    font-size: 32px;
+    color: rgb(164, 164, 14);
+    padding-bottom: 30px;
+}
+
+.stories{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stories > a{
+    display: flex;
+    color: rgb(234, 234, 24);
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    border: 2px solid white;
+    height: 500px;
+    width: 300px;
+}
+
+.stories > a:hover{
+    flex-grow: 1;
+}
+
+
+/*Main content Ends*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 90%;
+    padding: 1%;
+}
+
+.top{
+    padding-top: 40px;
+    font-size: 20px;
+    transition: transform 10ms ease;
+    color: white;
+}
+
+.top a{
+    color: wheat;
+}
+
+.ends{
+    padding: 20px 0px 0px 20px;
+    line-height: 30px;
+    font-size: larger;
+    transition: transform 10ms ease;
+}
+
+.ends a{
+    color: white;
+}
+
+.ends a:hover, .top a:hover{
+    font-size: 23px;
+}
+
+body.lightmode{
+    background: none;
+    background-color: cyan;
+    .body-title{
+        color: black;
+    }
+    input{
+        border: 2px solid black;
+        color: black;
+    }
+    .lang{
+        color: black;
+    }
+    .content{
+        color: blue;
+        h1{
+            color: red;
+        }
+    }
+    .contri{
+        h3,a{
+            color: black;
+        }
+    }
+    .box-cont Box-A,Box-B{
+        border: 3px solid black;
+        button{
+            border: 2px solid black;
+        }
+    }
+    .stories a{
+        border: 2px solid black;
+    }
+
+    footer{
+        a{
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,246 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Nerko One";
+}
+
+body{
+    background-image: url("..//preq/edit.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.options{
+    position: relative;
+    padding-top: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px
+}
+
+.read-select,.write-select{
+    border: 2px solid black;
+    background-color: inherit;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 37px;
+    cursor: pointer;
+}
+
+.read-select:hover, .write-select:hover{
+    background-color: wheat;
+}
+
+.read-cont {
+    display: none;
+}
+
+body.read-active .options {
+    display: none;
+}
+
+body.read-active{
+
+    .read-cont{
+        display: block;
+        padding: 4%;
+        padding-left: 50px;
+    }
+
+    .read-inputs{
+        line-height: 40px;
+        padding-bottom: 10px;
+        outline: none;
+    }
+
+    .read-search,.read-year{
+        padding: 1%;
+        border: 2px solid black;
+        outline: none;
+        border-radius: 7px;
+        background: none;
+        font-size: 16px;
+    }
+
+    .read-search::placeholder{
+        color: black;
+    }
+
+    .read-search{
+        width: 300px;
+    }
+
+    .read-year{
+        width: 85px;
+        height: 15px;
+    }
+
+    .read-year::placeholder{
+        color: black;
+    }
+
+    .read-lang{
+        display: flex;
+        gap: 20px;
+        padding: 20px 0 20px 0;
+        line-height: 25px;
+        select{
+            background: none;
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+    }
+
+    #read-submit,#read-reset,.back button{
+        padding: 0.5%;
+        background: none;
+        border: 2px solid black;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    #read-submit:hover,#read-reset:hover,.back>button:hover{
+        background-color: wheat;
+    }
+
+    .back{
+        display: inline;
+        position: relative;
+        left: 50%;
+    }
+
+    .stories{
+        display: none;
+    }
+
+    .stories.stories-active{
+        transition: 1s ease-in;
+        display: flex;
+        padding: 3%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stories.stories-active > a{
+        padding: 2%;
+        height: 200px;
+        border: 2px solid black;
+        border-radius: 7px;
+        color: black;
+        text-align: center;
+        font-size: large;
+    }
+}
+
+.write-cont {
+    display: none;
+}
+
+body.write-active .options {
+    display: none;
+}
+
+body.write-active{
+    .write-cont{
+        display: block;
+        padding: 1.8%;
+        padding-left: 60px;
+    }
+
+    .write-inputs{
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+
+    .write-search,.write-year{
+        padding: 1%;
+        border: 2px solid black;
+        border-radius: 7px;
+        background: none;
+        outline: none;
+        font-size: 16px;
+    }
+
+    .write-search{
+        width: 300px;
+    }
+
+    .write-search::placeholder{
+        color: black;
+    }
+
+    .write-year{
+        width: 85px;
+        height: 15px;
+    }
+
+    .write-year::placeholder{
+        color: black;
+    }
+
+    .write-lang{
+        display: flex;
+        gap: 20px;
+        padding: 20px 0 20px 0;
+        line-height: 25px;
+        select{
+            background: none;
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+    }
+
+    .user-story{
+        line-height: 50px;
+        width: 90%;
+        textarea{
+            height: 250px;
+            width: 100%;
+            padding: 2%;
+            font-size: large;
+            border: 2px solid black;
+            border-radius: 7px;
+            background: none;
+            overflow: auto;
+        }
+        padding-bottom: 7px;
+    }
+
+    #write-submit,#write-reset,.back > button{
+        padding: 1%;
+        background: none;
+        font-size: 17px;
+        border: 2px solid black;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    .back{
+        display: inline;
+        position: relative;
+        left: 60%;
+    }
+
+    #write-submit:hover,#write-reset:hover, .back > button:hover{
+        background-color: wheat;
+    }
+
+    .write-success{
+        display: none;
+    }
+
+    .write-success-active{
+        display: block;
+        font-size: 40px;
+        width: 80%;
+        position: absolute;
+        top: 40%;
+        left: 13%;
+        right: 20%;
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 8px;
+        line-height: 70px;
+        background-color: wheat;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story....</title>
+    <link rel="stylesheet" href="story_style.css">
+</head>
+<body>
+    <div class="options">
+        <button class="read-select">Read a Story</button>
+        <button class="write-select">Write a Story</button>
+    </div>
+
+    <div class="read-cont">
+        <div class="read-inputs">
+            <h2>Movie:</h2>
+            <input type="search" name="Movie" placeholder="enter movie name..." class="read-search">
+            <h3>Year:</h3>
+            <input type="number" placeholder="year" class="read-year">
+
+            <div class="read-lang">
+                <h3>Language:</h3>
+                <select>
+                    <option>Telugu</option>
+                    <option>Tamil</option>
+                    <option>Hindi</option>
+                    <option>Kannada</option>
+                    <option>Malyalam</option>
+                </select>
+            </div>
+            
+            <input type="submit" id="read-submit">
+            <input type="reset" id="read-reset">
+            <div class="back"><button type="button">Back To Main</button></div>
+        </div>
+        <hr style="color: black;">
+
+        <div class="stories">
+            <a href="#st1">Story-1</a>
+            <a href="#st2">Story-2</a>
+            <a href="#st3">Story-3</a>
+            <a href="#st4">Story-4</a>
+            <a href="#st5">Story-5</a>
+        </div>
+    </div>
+
+    <div class="write-cont">
+        <div class="write-inputs">
+            <h2>Movie:</h2>
+            <input type="search" name="Movie" placeholder="enter movie name..." class="write-search">
+            <h3>Year:</h3>
+            <input type="number" placeholder="year" class="write-year">
+
+            <div class="write-lang">
+                <h3>Language:</h3>
+                <select>
+                    <option>Telugu</option>
+                    <option>Tamil</option>
+                    <option>Hindi</option>
+                    <option>Kannada</option>
+                    <option>Malyalam</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="user-story">
+            <h3>Your Ending...</h3>
+            <textarea placeholder="write your ending here..."></textarea>
+        </div>
+
+        <input type="submit" id="write-submit">
+        <input type="reset" id="write-reset">
+
+        <div class="write-success">
+            <p>Your movie ending will be reviewed by our team.</p>
+            <p>You will receive an E-mail once done.</p>
+        </div>
+
+        <div class="back"><button type="button">Back To Main</button></div>
+    </div>
+    <script src="story_script.js" defer></script>
+</body>
+</html>
